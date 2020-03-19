@@ -9,11 +9,14 @@ if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 
     exit;
 }
 
-if (!$redis->exists('sss')) {
-    $redis->set('sss', 1,1000);
-} else {
-    $int = $redis->lPush('ooo', '1');
-    echo $int;
+while(!$redis->exists('ooo')) {
+    $redis->set('sss', 1,2000);
+    if ($redis->exists('sss')) {
+        $int = $redis->lPush('ooo', '1');
+        echo $int;
+    } else {
+        break;
+    }
 }
 
 
