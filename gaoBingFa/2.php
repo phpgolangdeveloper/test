@@ -9,7 +9,7 @@ if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 
     exit;
 }
 
-while (!$redis->exists('ooo')) {
+while (true) {
     $key = 'sss';
     $redis->incr('num');
     $redis->set($key, 1);
