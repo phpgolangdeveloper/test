@@ -7,7 +7,7 @@ $redis->auth(123456);
 
 while (true) {
 
-    if ($redis->lLen('ooo') + 1 > 99) {// 大于或者等于xxx 就提示队列已满 固定队列长度
+    if ($redis->lLen('ooo') + 1 > 120) {// 大于或者等于xxx 就提示队列已满 固定队列长度
         echo '队列已满';
         break;
     }
@@ -18,7 +18,7 @@ while (true) {
     if ($redis->exists('sss')) {
 
         $int = $redis->lPush('ooo', '1');
-        if ($int + 1 > 99) {// 大于或者等于xxx 就提示队列已满 固定队列长度
+        if ($int + 1 > 120) {// 大于或者等于xxx 就提示队列已满 固定队列长度
             echo $int;
             echo '队列已满';
             break;
