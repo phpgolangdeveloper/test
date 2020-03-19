@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gaoBingFa/2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="312">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -51,6 +51,7 @@
       <find>observers</find>
       <find>exit</find>
       <find>current</find>
+      <find>rnc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,12 +152,12 @@
       <workItem from="1584544874458" duration="3083000" />
       <workItem from="1584584489940" duration="17000" />
       <workItem from="1584590091859" duration="965000" />
-      <workItem from="1584591061537" duration="5440000" />
+      <workItem from="1584591061537" duration="5826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51817000" />
+    <option name="totallyTimeSpent" value="52203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -301,15 +302,15 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/redis/Redis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1667" column="28" selection-start-line="1667" selection-start-column="24" selection-end-line="1667" selection-end-column="28" />
+        <state relative-caret-position="230">
+          <caret line="351" column="14" selection-start-line="351" selection-start-column="14" selection-end-line="351" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gaoBingFa/2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="312">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>

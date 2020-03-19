@@ -11,6 +11,7 @@ if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 
 
 while (!$redis->exists('ooo')) {
     $key = 'sss';
+    $redis->incr('num');
     $redis->set($key, 1);
     //设置键的过期时间
     $redis->setTimeout($key, 1000);
