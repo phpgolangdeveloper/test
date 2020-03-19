@@ -1,7 +1,7 @@
 <?php
 ini_set("display_errors", "off");
 header("Content-type: text/html; charset=utf-8");
-$url='http://localhost/concurrent/client_1.php';
+$url='http://39.108.6.204/twj/test/gaoBingFa/2.php';
 $num=10;
 // $connomains = array(
 // 'http://localhost/concurrent/client_1.php',
