@@ -17,7 +17,6 @@ while (true) {
             echo '队列已满';
             exit;
         }
-        $redis->incr('num');
         $int = $redis->lPush('ooo', '1');
         echo $int;
     } else {
