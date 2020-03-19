@@ -11,7 +11,7 @@ $redis->connect('127.0.0.1',6379);
 $redis->auth(123456);
 
 
-if ($redis->lLen('ooo') >= 10) {
+if ($redis->lLen('ooo') >= 1000) {
     echo '队列已满';
     exit;
 }
