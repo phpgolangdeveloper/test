@@ -13,8 +13,10 @@ while (true) {
     $redis->set($key, 1);
     $redis->setTimeout($key, 1);// 有效期1秒
     if ($redis->exists('sss')) {
+
         $int = $redis->lPush('ooo', '1');
         if ($int + 1 > 120) {// 队列长度为120 就提示队列已满，退出循环 固定队列长度的作用
+            echo $int;
             echo '队列已满';
             break;
         }
