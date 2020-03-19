@@ -8,6 +8,11 @@ $redis->auth(123456);
 
 while (true) {
 
+
+    if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 固定队列长度
+        echo '队列已满';
+        break;
+    }
     $key = 'sss';
     $redis->set($key, 1);
     //设置键的过期时间
@@ -18,7 +23,7 @@ while (true) {
         if ($int >= 100) {// 大于或者等于xxx 就提示队列已满 固定队列长度
             echo $int;
             echo '队列已满';
-            exit;
+            break;
         }
     } else {
         break;
