@@ -15,7 +15,7 @@ while (true) {
     $redis->incr('num');
     $redis->set($key, 1);
     //设置键的过期时间
-    $redis->setTimeout($key, 1000);
+    $redis->setTimeout($key, 1);
     if ($redis->exists('sss')) {
         $int = $redis->lPush('ooo', '1');
         echo $int;
