@@ -4,12 +4,12 @@ $redis = new Redis();
 $redis->connect('127.0.0.1', 6379);
 $redis->auth(123456);
 $llen = 120;// 队列固定的长度
+$key = 'lock';// 锁的名字
 while (true) {
     if ($redis->lLen('ooo') + 1 > $llen) {// 初次进来的判断
         echo '队列已满';
         break;
     }
-    $key = 'lock';
     $redis->set($key, 1);
     //设置键的过期时间
     $redis->setTimeout($key, 1);// 锁的有效时间  1秒
