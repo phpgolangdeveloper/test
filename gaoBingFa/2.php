@@ -9,8 +9,11 @@ if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 
     exit;
 }
 
-while(!$redis->exists('ooo')) {
-    $redis->set('sss', 1,2000);
+while (!$redis->exists('ooo')) {
+    $key = 'sss';
+    $redis->set($key, 1);
+    //设置键的过期时间
+    $redis->setTimeout($key, 1000);
     if ($redis->exists('sss')) {
         $int = $redis->lPush('ooo', '1');
         echo $int;
