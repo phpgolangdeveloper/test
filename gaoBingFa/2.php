@@ -1,7 +1,9 @@
 <?php
+ini_set("display_errors", "off");
 $redis = new Redis();
 $redis->connect('127.0.0.1', 6379);
 $redis->auth(123456);
+
 
 
 while (true) {
@@ -13,14 +15,11 @@ while (true) {
     if ($redis->exists('sss')) {
         if ($redis->lLen('ooo') >= 100) {// 大于或者等于xxx 就提示队列已满 固定队列长度
             echo '队列已满';
-            break;
+            exit;
         }
         $redis->incr('num');
         $int = $redis->lPush('ooo', '1');
-        if ($int >= 100) {
-            echo $int;
-            break;
-        }
+        echo $int;
     } else {
         break;
     }
