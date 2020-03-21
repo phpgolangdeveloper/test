@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="y" value="20" />
     <option name="width" value="1920" />
     <option name="height" value="980" />
@@ -161,16 +160,15 @@
       <workItem from="1584674663133" duration="2784000" />
       <workItem from="1584760743813" duration="620000" />
       <workItem from="1584773541975" duration="847000" />
-      <workItem from="1584804809223" duration="65000" />
+      <workItem from="1584804809223" duration="656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63498000" />
+    <option name="totallyTimeSpent" value="64089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17091152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
