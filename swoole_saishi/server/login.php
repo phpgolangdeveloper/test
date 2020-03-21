@@ -9,6 +9,3 @@ class login {
     }
 
 }
-$request = $_REQUEST;
-$class = new $request['class'];
-$func = $request['func'];
