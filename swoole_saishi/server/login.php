@@ -12,8 +12,3 @@ class login {
 
 }
 
-
-$request = $_REQUEST;
-$class = new $request['class'];
-$func = $request['func'];
-var_dump($class->$func());
