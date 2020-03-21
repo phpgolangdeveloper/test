@@ -12,7 +12,7 @@ class http_server
         $this->http->set(
             [
                 'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
-                'document_root' => '/home/wwwroot/default/twj/swoole/data',//设置静态处理器的路径。类型为数组，默认不启用
+                'document_root' => '/home/wwwroot/default/twj/test/swoole_saishi/html',//设置静态处理器的路径。类型为数组，默认不启用
                 'worker_num' => 5,
             ]
         );
