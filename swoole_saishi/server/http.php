@@ -38,8 +38,8 @@ class Http
     public function onRequest($request, $response) {
         ob_start();
         var_dump($request->get);
-        $class = new $request['class'];
-        $func = $request['func'];
+        $class = new $request->get['class'];
+        $func = $request->get['func'];
         new $class->$func();
         $res = ob_get_contents();
         ob_end_clean();
