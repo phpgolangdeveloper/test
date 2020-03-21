@@ -8,4 +8,12 @@ class login {
         return "1234";
     }
 
+
+
 }
+
+
+$request = $_REQUEST;
+$class = new $request['class'];
+$func = $request['func'];
+var_dump($class->$func());
