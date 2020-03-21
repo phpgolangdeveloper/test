@@ -31,10 +31,19 @@ class Http
 
     public function onWorkerStart() {
 
+
     }
 
     public function onRequest($request, $response) {
+//        ob_start();
+        var_dump($request);
+//        $class = new $request['class'];
+//        $func = $request['func'];
+//        new $class->$func();
+//        $res = ob_get_contents();
+//        ob_end_clean();
 
+        $response->end(123);
     }
 
     /***

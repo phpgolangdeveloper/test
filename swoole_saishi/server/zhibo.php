@@ -15,6 +15,7 @@ class zhibo
      */
     public function login()
     {
+        echo 123;
 
     }
 
@@ -24,7 +25,7 @@ class zhibo
      */
     public function send()
     {
-
+        echo 345;
     }
 
     /***
