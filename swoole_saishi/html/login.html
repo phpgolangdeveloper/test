@@ -10,4 +10,32 @@
 <body>
     登录页
 </body>
+　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+    function getCode() {
+        $.ajax({
+            url:'../server/login.php?class=login&func=getCode',
+            type:'post',
+            data:{
+            },
+            success:function(res) {
+            }
+        });
+    }
+
+    function login() {
+        $.ajax({
+            url:'../server/login.php?class=login&func=login',
+            type:'post',
+            data:{
+                code:1234
+            },
+            success:function(res) {
+                console.log(res);
+            }
+        });
+    }
+
+
+</script>
 </html>
