@@ -30,17 +30,19 @@ class Http
         $this->http->start();
     }
 
-    public function onWorkerStart() {
+    public function onWorkerStart()
+    {
 
 
     }
 
-    public function onRequest($request, $response) {
+    public function onRequest($request, $response)
+    {
         ob_start();
         var_dump($request->get);
-        $class =  $request->get['class'];
+        $class = $request->get['class'];
         $func = $request->get['func'];
-        new $class->$func();
+        new ($class)->$func();
         $res = ob_get_contents();
         ob_end_clean();
 
