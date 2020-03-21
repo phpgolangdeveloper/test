@@ -1,5 +1,6 @@
 <?php
 include "./zhibo.php";
+include "./login.php";
 
 class Http
 {
