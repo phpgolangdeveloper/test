@@ -39,7 +39,7 @@ class Http
         ob_start();
         var_dump($request->get);
         $class = new $request->get['class'];
-        $func = $request->gett['func'];
+        $func = $request->get['func'];
         $class->$func();
         $res = ob_get_contents();
         ob_end_clean();
