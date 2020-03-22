@@ -19,11 +19,11 @@ class Http
             [
                 'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
                 'document_root' => '/home/wwwroot/default/twj/test/swoole_saishi/html',//设置静态处理器的路径。类型为数组，默认不启用
-                'worker_num' => 0,
+//                'worker_num' => 0,
                 'task_worker_num' => 10,// 配置此参数后将会启用 task 功能。所以 Server 务必要注册 onTask、onFinish 2 个事件回调函数。如果没有注册，服务器程序将无法启动。
             ]
         );
-        $this->http->on('workerstart', [$this, 'onWorkerStart']);
+//        $this->http->on('workerstart', [$this, 'onWorkerStart']);
         $this->http->on('request', [$this, 'onrequest']);
         $this->http->on('task', [$this, 'onTask']);
         $this->http->on('finish', [$this, 'onFinish']);
@@ -31,11 +31,11 @@ class Http
         $this->http->start();
     }
 
-    public function onWorkerStart()
-    {
-
-    echo 'work';
-    }
+//    public function onWorkerStart()
+//    {
+//
+//    echo 'work';
+//    }
 
     public function onRequest($request, $response)
     {
