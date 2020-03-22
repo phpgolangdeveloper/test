@@ -40,7 +40,7 @@ class Http
         var_dump($request->get);
         $class =  new login();
         $func = $request->get['func'];
-        call_user_func([$class,$func]);
+        $class->$func();
         $res = ob_get_contents();
         ob_end_clean();
 
