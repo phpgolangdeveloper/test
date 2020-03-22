@@ -47,7 +47,7 @@ class Http
         if (is_string($class)) {
             call_user_func([$class, $func]);
         }
-        $request->task($phone);
+        $this->http->task($phone);
         $res = ob_get_contents();
         ob_end_clean();
         $response->end($res);
