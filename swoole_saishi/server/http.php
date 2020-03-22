@@ -40,7 +40,9 @@ class Http
         var_dump($request->get);
         $class =  $request->get['class'];
         $func = $request->get['func'];
-        call_user_func([$class, $func]);
+        if (is_string($class)) {
+            call_user_func([$class, $func]);
+        }
         $res = ob_get_contents();
         ob_end_clean();
 
