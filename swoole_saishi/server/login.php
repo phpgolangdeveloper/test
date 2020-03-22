@@ -5,7 +5,7 @@ class login {
      * 获取验证码
      */
     public function getCode() {
-        return "1234";
+        echo  "1234";
     }
 
 
