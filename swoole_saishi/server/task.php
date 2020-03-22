@@ -9,7 +9,9 @@ class task
      */
     public static function sendSms($phone)
     {
-
+        if (!$phone) {
+            return 0;
+        }
         // 发送短信
         $redis = redisTest::getObj();
         $code = 1234;

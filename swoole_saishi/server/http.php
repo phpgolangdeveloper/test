@@ -61,8 +61,8 @@ class Http
      */
     public function onTask($serv, $taskId, $workerId, $data)
     {
-        echo '任务id：'.$taskId.PHP_EOL;
-        echo 'workerId:'.$workerId.PHP_EOL;
+        echo 'onTask-taskId：'.$taskId.PHP_EOL;
+        echo 'onTask-workerId:'.$workerId.PHP_EOL;
         $task = task::sendSms($data);
         if ($task) {
             return '发送验证码成功'.PHP_EOL;
@@ -78,8 +78,8 @@ class Http
      */
     public function onFinish($serv, $taskId, $data)
     {
-        echo 'finish-taskId:' . $taskId . "\n";
-        echo 'finish-data-sucess:' . $data . "\n";
+        echo 'onFinish-taskId:' . $taskId . "\n";
+        echo 'onFinish-data-sucess:' . $data . "\n";
     }
 
     public function onClose($ws, $fd)
