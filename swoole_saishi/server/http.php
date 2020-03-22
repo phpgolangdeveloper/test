@@ -64,6 +64,7 @@ class Http
         echo 'onTask-taskId：'.$taskId.PHP_EOL;
         echo 'onTask-workerId:'.$workerId.PHP_EOL;
         $task = task::sendSms($data);
+        var_dump($data);
         if ($task) {
             return '发送验证码成功'.PHP_EOL;
         } else {
