@@ -47,6 +47,7 @@ class Http
         if (is_string($class)) {
             call_user_func([$class, $func]);
         }
+        var_dump('执行第一次');
         $this->http->task($phone);
         $res = ob_get_contents();
         ob_end_clean();
