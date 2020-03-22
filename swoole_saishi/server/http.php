@@ -1,6 +1,7 @@
 <?php
 include "./zhibo.php";
 include "./login.php";
+include "./task.php";
 
 class Http
 {
@@ -30,22 +31,25 @@ class Http
         $this->http->start();
     }
 
-    public function onWorkerStart() {
+    public function onWorkerStart()
+    {
 
 
     }
 
-    public function onRequest($request, $response) {
+    public function onRequest($request, $response)
+    {
         ob_start();
         var_dump($request->get);
-        $class =  $request->get['class'];
+        $class = $request->get['class'];
         $func = $request->get['func'];
+        $phone = $request->get['phone'];
         if (is_string($class)) {
             call_user_func([$class, $func]);
         }
+        $request->task($phone);
         $res = ob_get_contents();
         ob_end_clean();
-
         $response->end($res);
     }
 
@@ -57,9 +61,7 @@ class Http
      */
     public function onTask($serv, $taskId, $workerId, $data)
     {
-        print_r($data);
-        sleep(10);
-        return 'on task finish';// 返回内容告诉worker进程
+        var_dump($data);
     }
 
     /***
