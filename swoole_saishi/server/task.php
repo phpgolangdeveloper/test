@@ -1,6 +1,6 @@
 <?php
 
-include './redis.php';
+include './redisTest.php';
 
 class task
 {
@@ -11,8 +11,8 @@ class task
     {
 
         // 发送短信
-        $redis = new redis();
+        $redis = redisTest::getObj();
         $code = 1234;
-        $redis->set('mt_'.$phone, 1234);
+        $redis->set('mt_'.$phone, $code);
    }
 }
