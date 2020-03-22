@@ -65,9 +65,9 @@ class Http
         echo 'workerId:'.$workerId.PHP_EOL;
         $task = task::sendSms($data);
         if ($task) {
-            echo '发送验证码成功'.PHP_EOL;
+            return '发送验证码成功'.PHP_EOL;
         } else {
-            echo '发送验证码失败'.PHP_EOL;
+            return '发送验证码失败'.PHP_EOL;
         }
     }
 
@@ -78,7 +78,7 @@ class Http
      */
     public function onFinish($serv, $taskId, $data)
     {
-        echo 'taskId:' . $taskId . "\n";
+        echo 'finish-taskId:' . $taskId . "\n";
         echo 'finish-data-sucess:' . $data . "\n";
     }
 
