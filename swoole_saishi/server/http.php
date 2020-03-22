@@ -41,7 +41,7 @@ class Http
         $class =  $request->get['class'];
         $func = $request->get['func'];
         $obj = new zhibo();
-        call_user_func($func);
+        call_user_func(['login', 'getCode']);
         $res = ob_get_contents();
         ob_end_clean();
 
