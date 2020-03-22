@@ -44,11 +44,15 @@ class Http
         $class = $request->get['class'];
         $func = $request->get['func'];
         $phone = $request->get['phone'];
+
         if (is_string($class)) {
             call_user_func([$class, $func]);
         }
-        var_dump('执行第一次');
-        $this->http->task($phone);
+        if ($class && $func && $phone) {
+            $this->http->task($phone);
+        } else {
+            echo '参数错误';
+        }
         $res = ob_get_contents();
         ob_end_clean();
         $response->end($res);
@@ -62,14 +66,14 @@ class Http
      */
     public function onTask($serv, $taskId, $workerId, $data)
     {
-        echo 'onTask-taskId：'.$taskId.PHP_EOL;
-        echo 'onTask-workerId:'.$workerId.PHP_EOL;
+        echo 'onTask-taskId：' . $taskId . PHP_EOL;
+        echo 'onTask-workerId:' . $workerId . PHP_EOL;
         $task = task::sendSms($data);
         var_dump($data);
         if ($task) {
-            return '发送验证码成功'.PHP_EOL;
+            return '发送验证码成功' . PHP_EOL;
         } else {
-            return '发送验证码失败'.PHP_EOL;
+            return '发送验证码失败' . PHP_EOL;
         }
     }
 
