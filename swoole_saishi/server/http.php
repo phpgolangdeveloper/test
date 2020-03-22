@@ -38,9 +38,10 @@ class Http
     public function onRequest($request, $response) {
         ob_start();
         var_dump($request->get);
-        $class =  new login();
+        $class =  $request->get['class'];
         $func = $request->get['func'];
-        $class->$func();
+        $obj = new zhibo();
+        call_user_func($func);
         $res = ob_get_contents();
         ob_end_clean();
 
