@@ -40,7 +40,7 @@ class Http
     public function onRequest($request, $response)
     {
         ob_start();
-        var_dump($request->get);
+        print_r($request->get);
         $class = $request->get['class'];
         $func = $request->get['func'];
         $phone = $request->get['phone'];
@@ -61,11 +61,13 @@ class Http
      */
     public function onTask($serv, $taskId, $workerId, $data)
     {
+        echo '任务id：'.$taskId.PHP_EOL;
+        echo 'workerId:'.$workerId.PHP_EOL;
         $task = task::sendSms($data);
         if ($task) {
-            echo '发送验证码成功';
+            echo '发送验证码成功'.PHP_EOL;
         } else {
-            echo '发送验证码失败';
+            echo '发送验证码失败'.PHP_EOL;
         }
     }
 
