@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/swoole_saishi/server/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/http.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swoole_saishi/server/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/task.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +21,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="24">
+              <caret line="36" selection-start-line="36" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="480">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -101,6 +100,8 @@
       <find>$class</find>
       <find>php_swoole_server_rshutdown</find>
       <find>onTask</find>
+      <find>task_worker_num</find>
+      <find>worker_num</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,8 +138,8 @@
         <option value="$PROJECT_DIR$/swoole_saishi/server/login.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/redis.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/redisTest.php" />
-        <option value="$PROJECT_DIR$/swoole_saishi/server/http.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/task.php" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/http.php" />
       </list>
     </option>
   </component>
@@ -237,12 +238,12 @@
       <workItem from="1584760743813" duration="620000" />
       <workItem from="1584773541975" duration="847000" />
       <workItem from="1584804809223" duration="9965000" />
-      <workItem from="1584857650671" duration="4188000" />
+      <workItem from="1584857650671" duration="4494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77586000" />
+    <option name="totallyTimeSpent" value="77892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -441,17 +442,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="65" column="25" selection-start-line="65" selection-start-column="25" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="480">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/task.php">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="24">
+          <caret line="36" selection-start-line="36" selection-end-line="37" />
         </state>
       </provider>
     </entry>
