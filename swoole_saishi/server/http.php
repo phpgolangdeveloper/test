@@ -61,7 +61,12 @@ class Http
      */
     public function onTask($serv, $taskId, $workerId, $data)
     {
-        var_dump($data);
+        $task = task::sendSms($data);
+        if ($task) {
+            echo '发送验证码成功';
+        } else {
+            echo '发送验证码失败';
+        }
     }
 
     /***
