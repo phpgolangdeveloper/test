@@ -63,7 +63,9 @@ class Http
     {
         echo 'onTask-taskId：' . $taskId . PHP_EOL;
         echo 'onTask-workerId:' . $workerId . PHP_EOL;
-        echo $this->switchTask($data);
+        $return_data = $this->switchTask($data);
+        echo $return_data;
+        return $return_data;
     }
 
     /***
