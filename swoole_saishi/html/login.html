@@ -20,17 +20,19 @@
 </html>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript">
+
     /***
      * 获取验证码
      */
     function getCode() {
+        var phone = $('input[name=phone]').val();
         $.ajax({
             url: 'http://39.108.6.204:8811',
             type: 'post',
             data: {
                 class: 'login',
                 func: 'getCode',
-                phone: '132466558413',
+                phone: phone,
             },
             success: function (res) {
                 console.log(res);
@@ -50,7 +52,8 @@
             type: 'post',
             data: {
                 class: 'login',
-                func: 'login',
+                func: 'loginType',
+                type:'typeLogin',
                 code: code,
                 phone:phone,
             },

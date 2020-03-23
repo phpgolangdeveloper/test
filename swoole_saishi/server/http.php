@@ -39,11 +39,10 @@ class Http
 
     public function onRequest($request, $response)
     {
-        print_r($request);
+//        print_r($request);
         ob_start();
         $class = $request->post['class'];
         $func = $request->post['func'];
-
         $_POST['http_server'] = $this->http;
 
         if (is_string($class)) {
@@ -64,12 +63,27 @@ class Http
     {
         echo 'onTask-taskId：' . $taskId . PHP_EOL;
         echo 'onTask-workerId:' . $workerId . PHP_EOL;
-        $task = task::sendSms($data);
-        var_dump($data);
-        if ($task) {
-            return '发送验证码成功' . PHP_EOL;
-        } else {
-            return '发送验证码失败' . PHP_EOL;
+        $this->switchTask($data);
+    }
+
+    /***
+     * task分类器
+     * @param $data
+     * @return string
+     */
+    public function switchTask($data) {
+        switch ($data['taskType']) {
+            case 'getCode':
+                $task = task::sendSms($data['data']['phone']);
+                if ($task) {
+                    return '发送验证码成功' . PHP_EOL;
+                } else {
+                    return '发送验证码失败' . PHP_EOL;
+                }
+                break;
+            default:
+                return '检查taskType参数';
+                break;
         }
     }
 

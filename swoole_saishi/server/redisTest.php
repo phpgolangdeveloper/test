@@ -24,4 +24,7 @@ class redisTest
         return self::$redis;
     }
 
+    public static function set($key,$val){}
+    public static function get($key){}
+
 }
