@@ -6,36 +6,47 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 </head>
 <body>
-    登录页
+登录页
 </body>
-　<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script>
+
+</html>
+　
+<script type="text/javascript"  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<script type="text/javascript">
+
     function getCode() {
         $.ajax({
-            url:'../server/login.php?class=login&func=getCode',
-            type:'post',
-            data:{
+            url: 'http://39.108.6.204:8811',
+            type: 'post',
+            data: {
+                class: 'login',
+                func: 'getCode',
+                phone: '132466558413',
             },
-            success:function(res) {
+            success: function (res) {
+                console.log(res);
             }
         });
     }
 
     function login() {
         $.ajax({
-            url:'../server/login.php?class=login&func=login',
-            type:'post',
-            data:{
-                code:1234
+            url: '../server/login.php?class=login&func=login',
+            type: 'post',
+            data: {
+                code: 1234
             },
-            success:function(res) {
+            success: function (res) {
                 console.log(res);
             }
         });
     }
 
+    getCode();
+
 
 </script>
-</html>
