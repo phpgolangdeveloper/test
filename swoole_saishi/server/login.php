@@ -18,7 +18,7 @@ class login
     public function loginPhone($phone, $code)
     {
         $redis = redisTest::getObj();
-        $redisCode = $redis->hget('phone_code', 'mt_'. $phone);
+        $redisCode = $redis->hget('phone_code', 'mt_' . $phone);
         var_dump($redisCode);
         var_dump($code);
         if ($code == $redisCode) {
@@ -36,7 +36,7 @@ class login
         $code = $request->post['typeLogin'];
         switch ($type) {
             case 'typeLogin':
-                $bool =   $this->loginPhone($phone, $code);
+                $bool = $this->loginPhone($phone, $code);
                 break;
             default:
                 break;
