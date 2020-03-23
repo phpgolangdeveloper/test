@@ -33,6 +33,7 @@ class login
             default:
                 break;
         }
+        var_dump($bool);
         return $bool;
     }
 
