@@ -49,12 +49,11 @@
         var code = $('input[name=code]').val();
         console.log(phone,code);
         $.ajax({
-            url: '',
+            url: 'http://39.108.6.204:8811',
             type: 'post',
             data: {
                 class: 'login',
                 func: 'loginType',
-                type:'typeLogin',
                 code: code,
                 phone:phone,
             },
