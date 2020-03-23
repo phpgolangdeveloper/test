@@ -3,6 +3,8 @@
 class redisTest
 {
 
+    const SAISHI_PHONE_CODE = 'saishi_phone_code';
+    const SAISHI_USER_DATA = 'saishi_user_data';
     protected static $redis = null;
 
     final protected function __construct()

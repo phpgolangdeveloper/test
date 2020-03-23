@@ -15,7 +15,7 @@ class task
         // 发送短信
         $redis = redisTest::getObj();
         $code = 1234;
-        $bool = $redis->hset('phone_code', 'mt_' . $phone, $code);
+        $bool = $redis->hset(redisTest::SAISHI_PHONE_CODE, 'mt_' . $phone, $code);
         if ($bool) {
             return 1;
         }
