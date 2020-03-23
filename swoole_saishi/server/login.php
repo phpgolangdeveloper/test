@@ -1,13 +1,17 @@
 <?php
 
-class login {
+class login
+{
     /***
      * 获取验证码
      */
-    public function getCode() {
-        echo  "1234";
-    }
+    public function getCode($request)
+    {
+        $phone = $request->post['phone'];
 
+        $http = $_POST['http_server'];
+        $http->task($phone);
+    }
 
 
 }

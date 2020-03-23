@@ -43,15 +43,11 @@ class Http
         ob_start();
         $class = $request->post['class'];
         $func = $request->post['func'];
-        $phone = $request->post['phone'];
+
+        $_POST['http_server'] = $this->http;
 
         if (is_string($class)) {
-            call_user_func([$class, $func]);
-        }
-        if ($class && $func && $phone) {
-            $this->http->task($phone);
-        } else {
-            echo '参数错误';
+            call_user_func([$class, $func], $request);
         }
         $res = ob_get_contents();
         ob_end_clean();
