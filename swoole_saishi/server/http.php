@@ -39,11 +39,11 @@ class Http
 
     public function onRequest($request, $response)
     {
-        print_r($request->get);
+        print_r($request);
         ob_start();
-        $class = $request->get['class'];
-        $func = $request->get['func'];
-        $phone = $request->get['phone'];
+        $class = $request->post['class'];
+        $func = $request->post['func'];
+        $phone = $request->post['phone'];
 
         if (is_string($class)) {
             call_user_func([$class, $func]);
