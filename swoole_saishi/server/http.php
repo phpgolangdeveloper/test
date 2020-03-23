@@ -39,18 +39,24 @@ class Http
 
     public function onRequest($request, $response)
     {
-//        print_r($request);
-        ob_start();
-        $class = $request->post['class'];
-        $func = $request->post['func'];
-        $_POST['http_server'] = $this->http;
+        //        print_r($request);
 
-        if (is_string($class)) {
-            call_user_func([$class, $func], $request);
+        try {
+            ob_start();
+            $class = $request->post['class'];
+            $func = $request->post['func'];
+            $_POST['http_server'] = $this->http;
+
+            if (is_string($class)) {
+                call_user_func([$class, $func], $request);
+            }
+            $res = ob_get_contents();
+            ob_end_clean();
+            $response->end($res);
+        } catch (\Exception $e) {
+            var_dump($e->getMessage());
         }
-        $res = ob_get_contents();
-        ob_end_clean();
-        $response->end($res);
+
     }
 
     /***
