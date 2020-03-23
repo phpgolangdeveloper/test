@@ -15,20 +15,6 @@ class login
         $http->task($data);
     }
 
-    public function loginPhone($phone, $code)
-    {
-        $redis = redisTest::getObj();
-        $redisCode = $redis->hget('phone_code', 'mt_' . $phone);
-        var_dump($redisCode);
-        var_dump($code);
-        if ($code == $redisCode) {
-            return 1;
-        } else {
-            return 0;
-        }
-
-    }
-
     public function loginType($request)
     {
         $phone = $request->post['phone'];
@@ -36,7 +22,13 @@ class login
         $code = $request->post['code'];
         switch ($type) {
             case 'typeLogin':
-                $bool = $this->loginPhone($phone, $code);
+                $redis = redisTest::getObj();
+                $redisCode = $redis->hget('phone_code', 'mt_' . $phone);
+                if ($code == $redisCode) {
+                    $bool = true;
+                } else {
+                    $bool = false;
+                }
                 break;
             default:
                 break;
