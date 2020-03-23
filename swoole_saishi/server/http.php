@@ -39,7 +39,6 @@ class Http
 
     public function onRequest($request, $response)
     {
-        header("Content-Type:text/html;charset=utf-8");
         print_r($request->get);
         ob_start();
         $class = $request->get['class'];
