@@ -33,7 +33,7 @@ class login
     {
         $phone = $request->post['phone'];
         $type = $request->post['type'];
-        $code = $request->post['typeLogin'];
+        $code = $request->post['code'];
         switch ($type) {
             case 'typeLogin':
                 $bool = $this->loginPhone($phone, $code);
