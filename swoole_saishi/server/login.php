@@ -26,9 +26,7 @@ class login
                 $redisCode = $redis->hget(redisTest::SAISHI_PHONE_CODE, 'mt_' . $phone);
                 if ($code == $redisCode) {
                     // 登录成功后存储信息到redis
-                    $redis->hMset(redisTest::SAISHI_USER_DATA, [
-                        'phone' => $phone,
-                    ]);
+                    $redis->hget(redisTest::SAISHI_USER_DATA, 'user_date'.$phone, $phone);
                     $bool = true;
                 } else {
                     $bool = false;

@@ -1,6 +1,6 @@
 <?php
 ini_set("display_errors", "off");
-$redis = new redisTest();
+$redis = new Redis();
 $redis->connect('127.0.0.1', 6379);
 $redis->auth(123456);
 $llen = 120;// 队列固定的长度
