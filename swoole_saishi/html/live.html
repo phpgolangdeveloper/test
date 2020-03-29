@@ -15,18 +15,18 @@
     <span>第几节</span>
     <select name="type">
         <option value="0">第几节</option>
-        <option value="1">第一节</option>
-        <option value="2">第二节</option>
-        <option value="3">第三节</option>
-        <option value="4">第四节</option>
-        <option value="5">第五节</option>
+        <option value="第一节">第一节</option>
+        <option value="第二节">第二节</option>
+        <option value="第三节">第三节</option>
+        <option value="第四节">第四节</option>
+        <option value="第五节">第五节</option>
     </select>
     <br>
     <span>球队</span>
     <select name="team">
         <option value="0">请选择</option>
-        <option value="1">马刺</option>
-        <option value="2">热火</option>
+        <option value="马刺">马刺</option>
+        <option value="热火">热火</option>
     </select>
     <br>
     <span>赛况内容</span>
@@ -51,6 +51,9 @@
         var team = $('select[name=team]').val();
         var type = $('select[name=type]').val();
         var content = $('textarea[name=content]').val();
+        console.log(team);
+        console.log(type);
+        console.log(content);
 
         $.ajax({
             url: 'http://39.108.6.204:8811',
