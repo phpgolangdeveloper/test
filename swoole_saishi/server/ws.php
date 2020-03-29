@@ -43,7 +43,9 @@ class Ws
      */
     public function onOpen($ws, $request)
     {
+        // fd 放进redis 有序集合 [1,2,3]
         var_dump($request->fd . "\n");
+        $redis = redisTest::getObj()->sadd('live_game_key', $request->fd);
     }
 
     /***
@@ -64,12 +66,6 @@ class Ws
      */
     public function onRequest($request, $response)
     {
-        $_FILES = [];
-        if (isset($request->files)) {
-            foreach ($request->files as $k => $v) {
-                $_FILES[$k] = $v;
-            }
-        }
         print_r($request);
         try {
             ob_start();
