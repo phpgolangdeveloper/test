@@ -80,7 +80,7 @@ class Ws
                 $class = $request->post['class'];
                 $func = $request->post['func'];
             }
-            $_POST['ws'] = $this->ws;
+            $_POST['http_server'] = $this->ws;
 
             if (is_string($class)) {
                 call_user_func([$class, $func], $request);
