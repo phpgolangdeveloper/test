@@ -57,14 +57,23 @@ class Ws
         $ws->push($frame->fd, 'server-push:' . date('Y-M-D H:i:s') . "\n");
     }
 
+    /***
+     * 握手
+     * @param $request
+     * @param $response
+     */
     public function onRequest($request, $response)
     {
-                print_r($request);
-
+        print_r($request);
         try {
             ob_start();
-            $class = $request->post['class'];
-            $func = $request->post['func'];
+            if ($request->get) {
+                $class = $request->get['class'];
+                $func = $request->get['func'];
+            } else {
+                $class = $request->post['class'];
+                $func = $request->post['func'];
+            }
             $_POST['ws'] = $this->ws;
 
             if (is_string($class)) {
@@ -132,4 +141,5 @@ class Ws
         echo 'clientid:' . $fd . "\n";
     }
 }
+
 $obj = new Ws();
