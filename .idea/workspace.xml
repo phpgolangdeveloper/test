@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/swoole_saishi/server/ws.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole_saishi/admin/host/live.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole_saishi/server/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swoole_saishi/server/include_common.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaoBingFa/2.php" beforeDir="false" afterPath="$PROJECT_DIR$/gaoBingFa/2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swoole_saishi/server/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swoole_saishi/server/http.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/http.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swoole_saishi/server/ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/ws.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="52" column="16" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="16" />
+            <state relative-caret-position="72">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -27,26 +29,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
+            <state relative-caret-position="648">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/ws.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swoole_saishi/html/login.html">
+        <entry file="file://$PROJECT_DIR$/swoole_saishi/server/include_common.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="5" column="7" selection-start-line="5" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/host/live.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="63" column="53" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swoole_saishi/server/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -95,6 +115,11 @@
       <find>typeLogin</find>
       <find>$hashKeys</find>
       <find>http</find>
+      <find>多级</find>
+      <find>Uploader</find>
+      <find>!$</find>
+      <find>!$ )</find>
+      <find>fileList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,18 +154,23 @@
         <option value="$PROJECT_DIR$/swoole_saishi/server/redis.php" />
         <option value="$PROJECT_DIR$/gaoBingFa/2.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/html/login.html" />
-        <option value="$PROJECT_DIR$/swoole_saishi/server/http.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/task.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/redisTest.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/login.php" />
+        <option value="$PROJECT_DIR$/swoole_saishi/admin/index.html" />
+        <option value="$PROJECT_DIR$/swoole_saishi/admin/host/live.html" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/image.php" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/admin.php" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/include_common.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/ws.php" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/http.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="657" />
-    <option name="y" value="41" />
-    <option name="width" value="1448" />
+    <option name="x" value="802" />
+    <option name="y" value="70" />
+    <option name="width" value="1449" />
     <option name="height" value="980" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -235,18 +265,19 @@
       <workItem from="1584933311120" duration="12268000" />
       <workItem from="1584976306408" duration="12000" />
       <workItem from="1585033032219" duration="2519000" />
-      <workItem from="1585369946671" duration="254000" />
+      <workItem from="1585369946671" duration="2118000" />
+      <workItem from="1585447859508" duration="2667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97955000" />
+    <option name="totallyTimeSpent" value="102486000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="526" y="33" width="1158" height="784" extended-state="0" />
+    <frame x="642" y="56" width="1159" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1809091" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18437783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -404,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/html/detaile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swoole_saishi/server/zhibo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-40">
@@ -439,17 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="52" column="16" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/html/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+        <state relative-caret-position="648">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -467,17 +484,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/login.php">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/js/xadmin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="226">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="85" column="71" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/html/detaile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/admin-add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/host/live.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="63" column="53" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_saishi/server/ws.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/include_common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" selection-start-line="5" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/http.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

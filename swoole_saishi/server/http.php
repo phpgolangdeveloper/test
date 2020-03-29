@@ -1,7 +1,5 @@
 <?php
-include "./zhibo.php";
-include "./login.php";
-include "./task.php";
+include './include_common.php';
 
 class Http
 {
