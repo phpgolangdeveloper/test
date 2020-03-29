@@ -64,6 +64,12 @@ class Ws
      */
     public function onRequest($request, $response)
     {
+        $_FILES = [];
+        if (isset($request->files)) {
+            foreach ($request->files as $k => $v) {
+                $_FILES[$k] = $v;
+            }
+        }
         print_r($request);
         try {
             ob_start();
