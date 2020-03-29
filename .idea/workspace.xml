@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="" />
+    <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/swoole_saishi/admin/live.html" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/admin/live.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swoole_saishi/server/ws.php" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/server/ws.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/live.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
-              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+              <caret line="8" column="45" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/server/ws.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+            <state relative-caret-position="192">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
@@ -112,16 +115,16 @@
         <option value="$PROJECT_DIR$/swoole_saishi/server/image.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/admin.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/http.php" />
-        <option value="$PROJECT_DIR$/swoole_saishi/server/ws.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/admin/index.html" />
         <option value="$PROJECT_DIR$/swoole_saishi/server/include_common.php" />
         <option value="$PROJECT_DIR$/swoole_saishi/admin/live.html" />
+        <option value="$PROJECT_DIR$/swoole_saishi/server/ws.php" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-197" />
-    <option name="y" value="61" />
+    <option name="x" value="577" />
+    <option name="y" value="17" />
     <option name="width" value="1658" />
     <option name="height" value="980" />
   </component>
@@ -225,15 +228,15 @@
       <workItem from="1584976306408" duration="12000" />
       <workItem from="1585033032219" duration="2519000" />
       <workItem from="1585369946671" duration="2118000" />
-      <workItem from="1585447859508" duration="4525000" />
+      <workItem from="1585447859508" duration="4695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104344000" />
+    <option name="totallyTimeSpent" value="104514000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-157" y="49" width="1326" height="784" extended-state="0" />
+    <frame x="462" y="14" width="1326" height="784" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16009463" />
@@ -495,10 +498,10 @@
     <entry file="file://$PROJECT_DIR$/swoole_saishi/public/webuploader.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/ws.php">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/live.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="80" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+        <state relative-caret-position="192">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -509,10 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/live.html">
+    <entry file="file://$PROJECT_DIR$/swoole_saishi/server/ws.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
         </state>
       </provider>
     </entry>

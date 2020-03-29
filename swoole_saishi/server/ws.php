@@ -59,7 +59,7 @@ class Ws
 
     public function onRequest($request, $response)
     {
-        //        print_r($request);
+                print_r($request);
 
         try {
             ob_start();
