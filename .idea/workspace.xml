@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdd25da1-19d3-4d2e-aa20-ab7405d9ebd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/swoole_saishi/admin/live.html" beforeDir="false" afterPath="$PROJECT_DIR$/swoole_saishi/admin/live.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/live.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="204">
+              <caret line="45" selection-start-line="45" selection-end-line="138" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -53,6 +53,7 @@
       <find>!$ )</find>
       <find>fileList</find>
       <find>主持人</find>
+      <find>host/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,12 +208,12 @@
       <workItem from="1584976306408" duration="12000" />
       <workItem from="1585033032219" duration="2519000" />
       <workItem from="1585369946671" duration="2118000" />
-      <workItem from="1585447859508" duration="3523000" />
+      <workItem from="1585447859508" duration="3788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103342000" />
+    <option name="totallyTimeSpent" value="103607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="46" width="1326" height="784" extended-state="0" />
@@ -493,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swoole_saishi/admin/live.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state relative-caret-position="204">
+          <caret line="45" selection-start-line="45" selection-end-line="138" selection-end-column="9" />
         </state>
       </provider>
     </entry>
