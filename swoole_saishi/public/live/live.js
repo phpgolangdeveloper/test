@@ -1,6 +1,6 @@
 var wsUrl = 'ws://39.108.6.204:8811';
 var websocket = new WebSocket(wsUrl);
-
+console.log(123);
 // 实例对象的 onopen属性
 websocket.onopen = function (evt) {
     console.log('coneccted-swoole-success');
