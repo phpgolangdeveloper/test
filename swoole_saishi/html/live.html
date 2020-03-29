@@ -51,12 +51,6 @@
         var team = $('select[name=team]').val();
         var type = $('select[name=type]').val();
         var content = $('textarea[name=content]').val();
-        console.log(team);
-        console.log(type);
-        console.log(content);
-        var arr = [];
-        arr.push(team, type, content);
-        console.log(arr);
 
         $.ajax({
             url: 'http://39.108.6.204:8811',
@@ -64,7 +58,9 @@
             data: {
                 class: 'admin',
                 func: 'live',
-                data: arr,
+                type: type,
+                content: content,
+                team: team,
             },
             success: function (res) {
                 // console.log(res);
