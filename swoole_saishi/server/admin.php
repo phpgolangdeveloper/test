@@ -10,9 +10,9 @@ class admin
 
     }
 
-    public function live()
+    public function live($request)
     {
-        print_r($_POST);
+        print_r($request);
 
         // 1 把赛况基本信息入库
 
@@ -32,10 +32,10 @@ class admin
         ];
 
         $data = [
-            'type' => intval($_POST['type']),
-            'title' => $_POST['name'],
+            'type' => intval($request->post['type']),
+            'title' => $request->post['name'] ?: '哈哈',
             'logo' => 'jpg',
-            'content' => $_POST['content'],
+            'content' => $request->post['content'],
             'image' => 'png'
         ];
 
