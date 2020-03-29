@@ -4,16 +4,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <!--<link rel="stylesheet" type="text/css" href="../public/webuploader.css">-->
     <script type="text/javascript" src="../public/webuploader.js"></script>
     <title>Document</title>
 </head>
 <body>
-<form action="">
+<form action="javasrcript:voin(0);">
     <span>第几节</span>
     <select name="type">
+        <option value="0">第几节</option>
         <option value="1">第一节</option>
         <option value="2">第二节</option>
         <option value="3">第三节</option>
@@ -23,117 +24,52 @@
     <br>
     <span>球队</span>
     <select name="team">
-        <option value=""></option>
+        <option value="0">请选择</option>
+        <option value="1">马刺</option>
+        <option value="2">热火</option>
     </select>
     <br>
     <span>赛况内容</span>
-    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <textarea name="content" id="" cols="30" rows="10"></textarea>
     <br>
 
     <!--<span>赛况图</span>-->
     <!--<input type="file" name="image">-->
     <!--dom结构部分-->
     <!--<div id="uploader-demo">-->
-        <!--&lt;!&ndash;用来存放item&ndash;&gt;-->
-        <!--<div id="fileList" class="uploader-list"></div>-->
-        <!--&lt;!&ndash;<div id="filePicker">选择图片</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;用来存放item&ndash;&gt;-->
+    <!--<div id="fileList" class="uploader-list"></div>-->
+    <!--&lt;!&ndash;<div id="filePicker">选择图片</div>&ndash;&gt;-->
     <!--</div>-->
     <br>
 
-    <button>添加</button>
+    <button onclick="push()">添加</button>
 </form>
 </body>
 <script>
-    // $list = $('#fileList'),
-    //     ratio = window.devicePixelRatio || 1,
-    //     thumbnailWidth = 100 * ratio,
-    //     thumbnailHeight = 100 * ratio,
-    //     uploader;
-    // // 初始化Web Uploader
-    // var uploader = WebUploader.create({
-    //
-    //     // 选完文件后，是否自动上传。
-    //     auto: true,
-    //
-    //     // swf文件路径
-    //     swf: '../public/Uploader.swf',
-    //
-    //     // 文件接收服务端。
-    //     server: 'http://39.108.6.204:8811?class=admin&func=image',
-    //
-    //     // 选择文件的按钮。可选。
-    //     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
-    //     pick: '#filePicker',
-    //
-    //     // 只允许选择图片文件。
-    //     accept: {
-    //         title: 'Images',
-    //         extensions: 'gif,jpg,jpeg,bmp,png',
-    //         mimeTypes: 'image/*'
-    //     }
-    // });
-    // // 当有文件添加进来的时候
-    // uploader.on( 'fileQueued', function( file ) {
-    //     var $li = $(
-    //         '<div id="' + file.id + '" class="file-item thumbnail">' +
-    //         '<img>' +
-    //         '<div class="info">' + file.name + '</div>' +
-    //         '</div>'
-    //         ),
-    //         $img = $li.find('img');
-    //
-    //
-    //     // $list为容器jQuery实例
-    //     $list.append( $li );
-    //
-    //     // 创建缩略图
-    //     // 如果为非图片文件，可以不用调用此方法。
-    //     // thumbnailWidth x thumbnailHeight 为 100 x 100
-    //     uploader.makeThumb( file, function( error, src ) {
-    //         if ( error ) {
-    //             $img.replaceWith('<span>不能预览</span>');
-    //             return;
-    //         }
-    //
-    //         $img.attr( 'src', src );
-    //     }, thumbnailWidth, thumbnailHeight );
-    // });
-    // // 文件上传过程中创建进度条实时显示。
-    // uploader.on( 'uploadProgress', function( file, percentage ) {
-    //     var $li = $( '#'+file.id ),
-    //         $percent = $li.find('.progress span');
-    //
-    //     // 避免重复创建
-    //     if ( !$percent.length ) {
-    //         $percent = $('<p class="progress"><span></span></p>')
-    //             .appendTo( $li )
-    //             .find('span');
-    //     }
-    //
-    //     $percent.css( 'width', percentage * 100 + '%' );
-    // });
-    //
-    // // 文件上传成功，给item添加成功class, 用样式标记上传成功。
-    // uploader.on( 'uploadSuccess', function( file ) {
-    //     $( '#'+file.id ).addClass('upload-state-done');
-    // });
-    //
-    // // 文件上传失败，显示上传出错。
-    // uploader.on( 'uploadError', function( file ) {
-    //     var $li = $( '#'+file.id ),
-    //         $error = $li.find('div.error');
-    //
-    //     // 避免重复创建
-    //     if ( !$error.length ) {
-    //         $error = $('<div class="error"></div>').appendTo( $li );
-    //     }
-    //
-    //     $error.text('上传失败');
-    // });
-    //
-    // // 完成上传完了，成功或者失败，先删除进度条。
-    // uploader.on( 'uploadComplete', function( file ) {
-    //     $( '#'+file.id ).find('.progress').remove();
-    // });
+    function push() {
+        var team = $('input[name=team]').val();
+        var type = $('input[name=type]').val();
+        var content = $('input[name=content]').val();
+        console.log(team);
+        console.log(type);
+        console.log(content);
+        var arr = [];
+        arr.push(team, type, content);
+        console.log(arr);
+
+        $.ajax({
+            url: 'http://39.108.6.204:8811',
+            type: 'post',
+            data: {
+                class: 'admin',
+                func: 'live',
+                data: arr,
+            },
+            success: function (res) {
+                console.log(res);
+            }
+        });
+    }
 </script>
 </html>
