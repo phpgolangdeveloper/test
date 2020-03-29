@@ -141,6 +141,10 @@ class Ws
     public function onClose($ws, $fd)
     {
         echo 'clientid:' . $fd . "\n";
+
+        // 关闭就需要去redis有序集合踢出
+        redisTest::getObj()->srem('live_game_key',$fd);
+
     }
 }
 
