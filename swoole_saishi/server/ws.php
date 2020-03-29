@@ -8,7 +8,7 @@ class Ws
     const PORT = 8811;
     public $http = null;
 
-    public function __construct()
+    public function __construct($s)
     {
         $this->ws = new swoole_websocket_server(self::HOST, self::PORT);
         $this->ws->set(
@@ -16,7 +16,7 @@ class Ws
         // worker_num 设置启动的 Worker 进程数。【默认值：CPU 核数】
             [
                 'enable_static_handler' => true,//开启静态文件请求处理功能，需配合 document_root 使用 默认 false
-                'document_root' => '/home/wwwroot/default/twj/test/swoole_saishi/html',//设置静态处理器的路径。类型为数组，默认不启用
+                'document_root' => '/home/wwwroot/default/twj/test/swoole_saishi/'.$s,//设置静态处理器的路径。类型为数组，默认不启用
                 'worker_num' => 2,
                 'task_worker_num' => 2,// 配置此参数后将会启用 task 功能。所以 Server 务必要注册 onTask、onFinish 2 个事件回调函数。如果没有注册，服务器程序将无法启动。
             ]
@@ -132,5 +132,5 @@ class Ws
         echo 'clientid:' . $fd . "\n";
     }
 }
-
-$obj = new Ws();
+$s = $_GET['s'];
+$obj = new Ws($s);
