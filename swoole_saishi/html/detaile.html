@@ -5,11 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="../public/live/live.js"></script>
     <title>Document</title>
 
 </head>
 <body>
 赛事直播详情页
 </body>
+<script>
+    var wsUrl = 'ws://39.108.6.204:8811';
+    var websocket = new WebSocket(wsUrl);
+    console.log(123);
+    // 实例对象的 onopen属性
+    websocket.onopen = function (evt) {
+        console.log('coneccted-swoole-success');
+    }
+    // 实例化 onmessage
+    websocket.onmessage = function (evt) {
+        console.log('ws-server-return-data:' + evt.data);
+    }
+    // 关闭
+    websocket.onclose = function (evt) {
+        console.log('closw');
+    }
+
+    websocket.onerror = function (evt, e) {
+        console.log('error:' + e.data);
+    }
+</script>
 </html>
