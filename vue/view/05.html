@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app" v-cloak>
+    {{message}}
+</div>
+<script src="../vue.js"></script>
+<script>
+    // 在VUE解析之前，div中有一个属性 v-cloak
+    // 在VUE解析之后，div中没有一个属性v-cloak
+    // 可以根据这个v-cloak来决定要不要执行 id=app
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊'
+        }
+    });
+</script>
+</body>
+</html>
