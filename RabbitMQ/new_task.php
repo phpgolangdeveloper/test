@@ -3,6 +3,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 
+// 如果终端写了信息，$data就有值
 $data = implode(' ', array_slice($argv, 1));
 if(empty($data)) $data = "Hello World!";
 
@@ -10,7 +11,7 @@ if(empty($data)) $data = "Hello World!";
 $connection = new AMQPStreamConnection('localhost', 5672, 'guest', 'guest');
 $channel = $connection->channel();
 
-
+// queue_declare 生命队列
 $channel->queue_declare('task_queue', false, false, false, false);
 
 $msg = new AMQPMessage($data,
