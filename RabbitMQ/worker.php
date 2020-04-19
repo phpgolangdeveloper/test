@@ -23,13 +23,17 @@ $channel->queue_declare('hello', false, false, false, false);
 
 echo ' [*] Waiting for messages. To exit press CTRL+C', "\n";
 
-$callback = function($msg) {
+$callback = function($msg){
     echo " [x] Received ", $msg->body, "\n";
+    sleep(substr_count($msg->body, '.'));
+    echo " [x] Done", "\n";
 };
 
+#翻译时注：只有consumer已经处理并确认了上一条message时queue才分派新的message给它
+$channel->basic_qos(null, 1, null);
 #第四个参数 no_ack = false 时，表示进行ack应答，确保消息已经处理
 #$callback 表示回调函数，传入消息参数
-$channel->basic_consume('hello', '', false, true, false, false, $callback);
+$channel->basic_consume('task_queue', '', false, true, false, false, $callback);
 #当no_ack=false时， 需要写下行代码，否则可能出现内存不足情况#$msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);};
 
 #监听消息，一有消息，立马就处理
