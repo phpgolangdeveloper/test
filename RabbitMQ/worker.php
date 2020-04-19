@@ -32,7 +32,7 @@ $callback = function($msg){
 $channel->basic_qos(null, 1, null);
 #第四个参数 no_ack = false 时，表示进行ack应答，确保消息已经处理
 #$callback 表示回调函数，传入消息参数
-$channel->basic_consume('task_queue', '', false, true, false, false, $callback);
+$channel->basic_consume('task_queue', '', false, false, false, false, $callback);
 #当no_ack=false时， 需要写下行代码，否则可能出现内存不足情况#$msg->delivery_info['channel']->basic_ack($msg->delivery_info['delivery_tag']);};
 
 #监听消息，一有消息，立马就处理
