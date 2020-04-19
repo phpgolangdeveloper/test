@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0054008d-b0c0-4fb2-838f-7c5862db3e97" name="Default Changelist" comment="" />
+    <list default="true" id="0054008d-b0c0-4fb2-838f-7c5862db3e97" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/new_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/new_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/worker.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/RabbitMQ/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/" />
     <ignored path="$PROJECT_DIR$/RabbitMQ/vendor/phpseclib/phpseclib/" />
@@ -19,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
               <folding>
                 <element signature="e#53#100#0#PHP" expanded="true" />
               </folding>
@@ -31,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RabbitMQ/worker.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="456">
+              <caret line="36" column="42" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -41,8 +44,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header</find>
-      <find>getCodegetCode</find>
       <find>loginType</find>
       <find>typeLogin</find>
       <find>$hashKeys</find>
@@ -61,16 +62,18 @@
       <find>PReade</find>
       <find>AMQPStreamConnection</find>
       <find>channel</find>
-      <find>queue_bind</find>
       <find>no_ack</find>
       <find>$msg</find>
-      <find>exchange_declare</find>
       <find>AMQPMessage</find>
       <find>task_queue</find>
-      <find>queue_declare</find>
       <find>$argv</find>
       <find>Sen</find>
       <find>basic_consume</find>
+      <find>queue_declare</find>
+      <find>basic_qos</find>
+      <find>exchange_declare</find>
+      <find>queue_bind</find>
+      <find>logs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,12 +190,12 @@
       <workItem from="1585746966800" duration="669000" />
       <workItem from="1585833832795" duration="59000" />
       <workItem from="1587174569541" duration="9457000" />
-      <workItem from="1587281151469" duration="6330000" />
+      <workItem from="1587281151469" duration="9683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131443000" />
+    <option name="totallyTimeSpent" value="134796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -560,8 +563,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
           <folding>
             <element signature="e#53#100#0#PHP" expanded="true" />
           </folding>
@@ -570,8 +573,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMQ/worker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        <state relative-caret-position="456">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="42" />
         </state>
       </provider>
     </entry>
