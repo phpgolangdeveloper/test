@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0054008d-b0c0-4fb2-838f-7c5862db3e97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RabbitMQ/new_task.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RabbitMQ/worker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ/a.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/a.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ/b.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/b.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/new_task.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/new_task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/RabbitMQ/worker.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/RabbitMQ/vendor/composer/" />
     <ignored path="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/" />
@@ -25,20 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RabbitMQ/a.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="19" lean-forward="true" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#53#100#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+            <state relative-caret-position="216">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="23" />
               <folding>
                 <element signature="e#53#100#0#PHP" expanded="true" />
               </folding>
@@ -47,10 +32,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RabbitMQ/worker.php">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="19" />
+            <state relative-caret-position="312">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="e#53#100#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,12 +61,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RabbitMQ/worker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>task_worker_num</find>
-      <find>worker_num</find>
       <find>request</find>
       <find>登录页</find>
       <find>header</find>
@@ -107,6 +102,8 @@
       <find>exchange_declare</find>
       <find>AMQPMessage</find>
       <find>basic_consume</find>
+      <find>task_queue</find>
+      <find>queue_declare</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +115,8 @@
         <option value="$PROJECT_DIR$/laravel5Test/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php" />
         <option value="$PROJECT_DIR$/RabbitMQ/b.php" />
         <option value="$PROJECT_DIR$/RabbitMQ/a.php" />
-        <option value="$PROJECT_DIR$/RabbitMQ/new_task.php" />
         <option value="$PROJECT_DIR$/RabbitMQ/worker.php" />
+        <option value="$PROJECT_DIR$/RabbitMQ/new_task.php" />
       </list>
     </option>
   </component>
@@ -219,12 +216,12 @@
       <workItem from="1585746966800" duration="669000" />
       <workItem from="1585833832795" duration="59000" />
       <workItem from="1587174569541" duration="9457000" />
-      <workItem from="1587281151469" duration="4068000" />
+      <workItem from="1587281151469" duration="4752000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129181000" />
+    <option name="totallyTimeSpent" value="129865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -573,26 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMQ/a.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="19" lean-forward="true" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="e#53#100#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-          <folding>
-            <element signature="e#53#100#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMQ/b.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -600,10 +577,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#53#100#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RabbitMQ/worker.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="296">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RabbitMQ/new_task.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#53#100#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -19,7 +19,7 @@ $channel = $connection->channel();
 //（1）非持久化队列,RabbitMQ退出或者崩溃时，该队列就不存在
 //（2）持久化队列（需要显示声明，第三个参数要设置为true），保存到磁盘，但不一定完全保证不丢失信息，因为保存总是要有时间的。
 
-$channel->queue_declare('hello', false, false, false, false);
+$channel->queue_declare('task_queue', false, false, false, false);
 
 echo ' [*] Waiting for messages. To exit press CTRL+C', "\n";
 
