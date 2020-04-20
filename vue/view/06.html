@@ -6,34 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        .reds {
-            color: red;
-        }
-    </style>
 </head>
 <body>
 <div id="app">
-    <ul>
-        <li v-on:click="dianji(k)" v-bind:class="getClass()" v-for="(v, k) in array"> {{v}}</li>
-    </ul>
+    <!--<h2 :style="{key(属性名): value(属性值)}">{{message}}</h2>-->
+    <h2 :style="getStyle()">{{message}}</h2>
 </div>
 <script src="../vue.js"></script>
 <script>
     const app = new Vue({
         el: '#app',
         data: {
-            message: '',
-            array: ['a', 'b', 'c'],
-            is_class: true,
+            message: '哈哈哈哈',
+            finalSize: '50px',
+            finalColor: 'red',
         },
         methods: {
-            dianji: function (k) {
-
-            },
-            getClass: function() {
-                return {reds: this.is_class};
-            },
+            getStyle: function () {
+                return {fontSize: this.finalSize, color: this.finalColor};
+            }
         },
     });
 </script>
