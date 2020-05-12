@@ -10,7 +10,7 @@ class TestController
 {
     public function test()
     {
-        SendReminderEmail::dispatch();
+        echo 45;
     }
 
     public function mq()
